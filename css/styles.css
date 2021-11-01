@@ -243,8 +243,8 @@ margin-right: 50px;
 }
 
 .advantage-detail {
-  width="270"
-  height="120"
+  width: 270px;
+  height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
   display: flex;
@@ -317,6 +317,10 @@ display: flex;
   margin-right: 30px;
 }
 
+.member-text {
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .member-item {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -340,12 +344,49 @@ display: flex;
   letter-spacing: 0.03em;
   color: var(--text-color);
   padding-top: 10px;
+  margin-bottom: 16px;
+}
+
+.team-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-contacts-detail {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  display: flex;
+}
+
+.team-contact-icon {
+  fill: #AFB1B8;
+  width: 20px;
+  height: 20px;
+}
+
+.team-contacts-detail:hover, 
+.team-contact-icon:focus {
+border-radius: 50px;
+background-color: var(--accent-color);
+}
+
+.team-contacts-detail:hover .team-contact-icon, 
+.team-contact-icon:focus .team-contact-icon {
+
+background-color: var(--accent-color);
+fill: #FFFFFF;
 }
 
 /* clients */
 
 .clients {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .clients-item {
@@ -370,14 +411,15 @@ display: flex;
 }
 
 .client-detail {
-  display: flex;
   width: 170px;
   height: 92px;
   border: solid;
   border-color: #AFB1B8;
   border-width: 1px;
   border-radius: 4px;
-  padding: 16px 32px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .client:not(:last-child) {
